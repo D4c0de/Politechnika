@@ -1,0 +1,107 @@
+\doxysection{Engiene Struct Reference}
+\hypertarget{struct_engiene}{}\label{struct_engiene}\index{Engiene@{Engiene}}
+
+
+Represents the Huffman coding/decoding engine.  
+
+
+
+
+{\ttfamily \#include $<$huffman\+Engiene.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_engiene_a694c4b05d8275f190f24efd1d14bec4d}{Engiene}} (std\+::string in, std\+::string out, bool encode)
+\begin{DoxyCompactList}\small\item\em Constructor for \doxylink{struct_engiene}{Engiene}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_engiene_aa5e7f2b3b63b63e57bd34bc5bc31f467}{\texorpdfstring{$\sim$}{\string~}\+Engiene}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{struct_engiene}{Engiene}. \end{DoxyCompactList}\item 
+\Hypertarget{struct_engiene_a0213f4e4bd1b403116d371ca762678c2}\label{struct_engiene_a0213f4e4bd1b403116d371ca762678c2} 
+void {\bfseries count\+Chars} ()
+\begin{DoxyCompactList}\small\item\em Counts the occurrences of characters in the input file and builds the frequency table. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{struct_engiene_a20493be77582c85f0a7417e547ab5809}{Set\+Element}} (int id, std\+::string \&\mbox{\hyperlink{struct_engiene_a565895b19696073c63ba5c89cb5a0426}{code}})
+\begin{DoxyCompactList}\small\item\em Sets the character code for a specific dictionary element. \end{DoxyCompactList}\item 
+\Hypertarget{struct_engiene_aafb399326a6ab22d1da5dc5067003ce3}\label{struct_engiene_aafb399326a6ab22d1da5dc5067003ce3} 
+void {\bfseries Get\+Dictionary} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the dictionary from the input file. \end{DoxyCompactList}\item 
+\Hypertarget{struct_engiene_a58e07a83106eeee9c4fd76eba447435e}\label{struct_engiene_a58e07a83106eeee9c4fd76eba447435e} 
+void {\bfseries Decode} ()
+\begin{DoxyCompactList}\small\item\em Decodes the input file using the Huffman coding. \end{DoxyCompactList}\item 
+\Hypertarget{struct_engiene_a8fa2c7d79f6a405a5900732160116161}\label{struct_engiene_a8fa2c7d79f6a405a5900732160116161} 
+void {\bfseries write\+Dictionary} ()
+\begin{DoxyCompactList}\small\item\em Writes the Huffman dictionary to the output file. \end{DoxyCompactList}\item 
+\Hypertarget{struct_engiene_a565895b19696073c63ba5c89cb5a0426}\label{struct_engiene_a565895b19696073c63ba5c89cb5a0426} 
+void {\bfseries code} ()
+\begin{DoxyCompactList}\small\item\em Encodes the input file using Huffman coding. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{struct_engiene_a3eef46c5b63e867501ac23db262ef446}\label{struct_engiene_a3eef46c5b63e867501ac23db262ef446} 
+\mbox{\hyperlink{class_file_i_o}{File\+IO}} \texorpdfstring{$\ast$}{*} {\bfseries file}
+\begin{DoxyCompactList}\small\item\em Pointer to \doxylink{class_file_i_o}{File\+IO} object. \end{DoxyCompactList}\item 
+\Hypertarget{struct_engiene_af6f1033efc534bb9eb34d6a391871abd}\label{struct_engiene_af6f1033efc534bb9eb34d6a391871abd} 
+\mbox{\hyperlink{class_dictionary}{Dictionary}} \texorpdfstring{$\ast$}{*} {\bfseries dictionary}
+\begin{DoxyCompactList}\small\item\em Pointer to \doxylink{class_dictionary}{Dictionary} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the Huffman coding/decoding engine. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{struct_engiene_a694c4b05d8275f190f24efd1d14bec4d}\label{struct_engiene_a694c4b05d8275f190f24efd1d14bec4d} 
+\index{Engiene@{Engiene}!Engiene@{Engiene}}
+\index{Engiene@{Engiene}!Engiene@{Engiene}}
+\doxysubsubsection{\texorpdfstring{Engiene()}{Engiene()}}
+{\footnotesize\ttfamily Engiene\+::\+Engiene (\begin{DoxyParamCaption}\item[{std\+::string}]{in,  }\item[{std\+::string}]{out,  }\item[{bool}]{encode }\end{DoxyParamCaption})}
+
+
+
+Constructor for \doxylink{struct_engiene}{Engiene}. 
+
+Constructor for Huffman\+Engiene.
+
+
+\begin{DoxyParams}{Parameters}
+{\em in} & Input file name. \\
+\hline
+{\em out} & Output file name. \\
+\hline
+{\em encode} & Flag indicating encoding operation. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{struct_engiene_aa5e7f2b3b63b63e57bd34bc5bc31f467}\label{struct_engiene_aa5e7f2b3b63b63e57bd34bc5bc31f467} 
+\index{Engiene@{Engiene}!````~Engiene@{\texorpdfstring{$\sim$}{\string~}Engiene}}
+\index{````~Engiene@{\texorpdfstring{$\sim$}{\string~}Engiene}!Engiene@{Engiene}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Engiene()}{\string~Engiene()}}
+{\footnotesize\ttfamily Engiene\+::\texorpdfstring{$\sim$}{\string~}\+Engiene (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \doxylink{struct_engiene}{Engiene}. 
+
+Destructor for Huffman\+Engiene. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{struct_engiene_a20493be77582c85f0a7417e547ab5809}\label{struct_engiene_a20493be77582c85f0a7417e547ab5809} 
+\index{Engiene@{Engiene}!SetElement@{SetElement}}
+\index{SetElement@{SetElement}!Engiene@{Engiene}}
+\doxysubsubsection{\texorpdfstring{SetElement()}{SetElement()}}
+{\footnotesize\ttfamily void Engiene\+::\+Set\+Element (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{std\+::string \&}]{code }\end{DoxyParamCaption})}
+
+
+
+Sets the character code for a specific dictionary element. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Index of the dictionary element. \\
+\hline
+{\em code} & New character code to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+huffman\+Engiene.\+h\item 
+\mbox{\hyperlink{huffman_engiene_8cpp}{huffman\+Engiene.\+cpp}}\end{DoxyCompactItemize}

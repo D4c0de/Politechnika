@@ -1,0 +1,48 @@
+\doxysection{Graph.\+h}
+\hypertarget{_graph_8h_source}{}\label{_graph_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}Dictionary.h"{}}}
+\DoxyCodeLine{00003\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <queue>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_node}{Node}}}
+\DoxyCodeLine{00012\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{struct_node_ad7a34779cad45d997bfd6d3d8043c75f}{Node}}();}
+\DoxyCodeLine{00017\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{struct_node_ad7a34779cad45d997bfd6d3d8043c75f}{Node}}(\textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_node_aaa0cd30d78a90c5a6ab64eb3d58b8f87}{value}},\ \textcolor{keywordtype}{char});}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{struct_node_aa0840c3cb5c7159be6d992adecd2097c}{\string~Node}}();}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00030\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{struct_node_aaa0cd30d78a90c5a6ab64eb3d58b8f87}{value}};\ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00031\ \ \ \ \ \mbox{\hyperlink{struct_node}{Node}}*\ \mbox{\hyperlink{struct_node_a920edc1e9e85269d79522f7e57b86b7b}{leftChild}};\ \ \ \ \ }
+\DoxyCodeLine{00032\ \ \ \ \ \mbox{\hyperlink{struct_node}{Node}}*\ \mbox{\hyperlink{struct_node_a5d291f441ac6a57461b0ef41d92ce278}{rightChild}};\ \ \ \ }
+\DoxyCodeLine{00033\ \ \ \ \ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{struct_node_a61aff5c2aea5a34a609ffcbdb88fde6f}{c}};\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00034\ \};}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classgraph}{graph}}}
+\DoxyCodeLine{00041\ \{}
+\DoxyCodeLine{00042\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00047\ \ \ \ \ \mbox{\hyperlink{classgraph_a130ffa991b905aad4efa0c681ed6de51}{graph}}(std::vector<DictionaryElement>\&);}
+\DoxyCodeLine{00048\ }
+\DoxyCodeLine{00052\ \ \ \ \ \mbox{\hyperlink{classgraph_aeb62eaf197cdcb4800fa016eebc3d55a}{\string~graph}}();}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgraph_a6c11448ecedea530a3ad28c239ee6f41}{updateDictionary}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00059\ \ \ \ \ std::vector<DictionaryElement>*\ \mbox{\hyperlink{classgraph_af1d59685a6b84aa420864e99613a9e9f}{dic}};\ }
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classgraph_ad748a9613da6a19dd9c067c89463f5e5}{req}}(\mbox{\hyperlink{struct_node}{Node}}*\ node,\ std::string*\ code);}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00068\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{bool}\ comparator(\textcolor{keyword}{const}\ \mbox{\hyperlink{struct_node}{Node}}\&\ a,\ \textcolor{keyword}{const}\ \mbox{\hyperlink{struct_node}{Node}}\&\ b)\ \{}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ a.\mbox{\hyperlink{struct_node_aaa0cd30d78a90c5a6ab64eb3d58b8f87}{value}}\ >\ b.\mbox{\hyperlink{struct_node_aaa0cd30d78a90c5a6ab64eb3d58b8f87}{value}};}
+\DoxyCodeLine{00077\ \ \ \ \ \}}
+\DoxyCodeLine{00078\ }
+\DoxyCodeLine{00079\ \ \ \ \ \mbox{\hyperlink{struct_node}{Node}}\ firstNode;\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00080\ \ \ \ \ std::vector<Node>\ nodeTab;\ }
+\DoxyCodeLine{00081\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ initialize();}
+\DoxyCodeLine{00086\ \};}
+
+\end{DoxyCode}

@@ -1,0 +1,77 @@
+\doxysection{graph Class Reference}
+\hypertarget{classgraph}{}\label{classgraph}\index{graph@{graph}}
+
+
+Represents the Huffman tree for encoding/decoding.  
+
+
+
+
+{\ttfamily \#include $<$Graph.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classgraph_a130ffa991b905aad4efa0c681ed6de51}{graph}} (std\+::vector$<$ \mbox{\hyperlink{struct_dictionary_element}{Dictionary\+Element}} $>$ \&)
+\begin{DoxyCompactList}\small\item\em Constructor for graph with a given vector of \doxylink{struct_dictionary_element}{Dictionary\+Element}. \end{DoxyCompactList}\item 
+\Hypertarget{classgraph_aeb62eaf197cdcb4800fa016eebc3d55a}\label{classgraph_aeb62eaf197cdcb4800fa016eebc3d55a} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}graph} ()
+\begin{DoxyCompactList}\small\item\em Destructor for graph. \end{DoxyCompactList}\item 
+\Hypertarget{classgraph_a6c11448ecedea530a3ad28c239ee6f41}\label{classgraph_a6c11448ecedea530a3ad28c239ee6f41} 
+void {\bfseries update\+Dictionary} ()
+\begin{DoxyCompactList}\small\item\em Updates the dictionary with Huffman codes after tree initialization. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classgraph_ad748a9613da6a19dd9c067c89463f5e5}{req}} (\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}node, std\+::string \texorpdfstring{$\ast$}{*}code)
+\begin{DoxyCompactList}\small\item\em Recursively traverses the Huffman tree and assigns Huffman codes to characters. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classgraph_af1d59685a6b84aa420864e99613a9e9f}\label{classgraph_af1d59685a6b84aa420864e99613a9e9f} 
+std\+::vector$<$ \mbox{\hyperlink{struct_dictionary_element}{Dictionary\+Element}} $>$ \texorpdfstring{$\ast$}{*} {\bfseries dic}
+\begin{DoxyCompactList}\small\item\em Pointer to the dictionary. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the Huffman tree for encoding/decoding. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classgraph_a130ffa991b905aad4efa0c681ed6de51}\label{classgraph_a130ffa991b905aad4efa0c681ed6de51} 
+\index{graph@{graph}!graph@{graph}}
+\index{graph@{graph}!graph@{graph}}
+\doxysubsubsection{\texorpdfstring{graph()}{graph()}}
+{\footnotesize\ttfamily graph\+::graph (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{struct_dictionary_element}{Dictionary\+Element}} $>$ \&}]{tab }\end{DoxyParamCaption})}
+
+
+
+Constructor for graph with a given vector of \doxylink{struct_dictionary_element}{Dictionary\+Element}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tab} & Vector of \doxylink{struct_dictionary_element}{Dictionary\+Element} representing character frequencies. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classgraph_ad748a9613da6a19dd9c067c89463f5e5}\label{classgraph_ad748a9613da6a19dd9c067c89463f5e5} 
+\index{graph@{graph}!req@{req}}
+\index{req@{req}!graph@{graph}}
+\doxysubsubsection{\texorpdfstring{req()}{req()}}
+{\footnotesize\ttfamily void graph\+::req (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_node}{Node}} \texorpdfstring{$\ast$}{*}}]{node,  }\item[{std\+::string \texorpdfstring{$\ast$}{*}}]{code }\end{DoxyParamCaption})}
+
+
+
+Recursively traverses the Huffman tree and assigns Huffman codes to characters. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em node} & Current node in the traversal. \\
+\hline
+{\em code} & Huffman code built during traversal. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Graph.\+h\item 
+Graph.\+cpp\end{DoxyCompactItemize}

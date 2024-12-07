@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów\Gui">
+      <UniqueIdentifier>{d237db98-f82a-4217-a645-b43252ac6dc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\song">
+      <UniqueIdentifier>{44171e43-7944-46a1-8dfb-aafbb4935337}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\user">
+      <UniqueIdentifier>{18674eb6-9048-4b36-af9d-50f91bbc1e13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\struct">
+      <UniqueIdentifier>{34916c9a-9e7e-4ca4-a773-0e4620ad0847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\server">
+      <UniqueIdentifier>{baf670fb-7053-40b0-8406-29ca119b6e49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\encryption">
+      <UniqueIdentifier>{f47ed9bf-065b-4360-bc71-beba51ffa24d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki zasobów\Gui\console">
+      <UniqueIdentifier>{16cedfc4-e00e-4301-917e-9c8d0708c77d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="MusicControll.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="ServerControll.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Settings.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="UI.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="UserProfile.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Window.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="ZaliczeniePK2_test.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="App.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Console.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="RemDB.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="record.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="FTP.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Creator.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="SHA256.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="CreatorConsole.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="AdminConsole.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="UserConsole.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="SettigsMenu.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App.h">
+      <Filter>Pliki zasobów</Filter>
+    </ClInclude>
+    <ClInclude Include="Window.h">
+      <Filter>Pliki zasobów\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="UI.h">
+      <Filter>Pliki zasobów\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="Console.h">
+      <Filter>Pliki zasobów\Gui</Filter>
+    </ClInclude>
+    <ClInclude Include="MusicControll.h">
+      <Filter>Pliki zasobów\song</Filter>
+    </ClInclude>
+    <ClInclude Include="UserProfile.h">
+      <Filter>Pliki zasobów\user</Filter>
+    </ClInclude>
+    <ClInclude Include="Settings.h">
+      <Filter>Pliki zasobów\user</Filter>
+    </ClInclude>
+    <ClInclude Include="record.h">
+      <Filter>Pliki zasobów\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="choice.h">
+      <Filter>Pliki zasobów\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="RemDB.h">
+      <Filter>Pliki zasobów\server</Filter>
+    </ClInclude>
+    <ClInclude Include="ServerControll.h">
+      <Filter>Pliki zasobów\server</Filter>
+    </ClInclude>
+    <ClInclude Include="FTP.h">
+      <Filter>Pliki zasobów\server</Filter>
+    </ClInclude>
+    <ClInclude Include="SHA256.h">
+      <Filter>Pliki zasobów\encryption</Filter>
+    </ClInclude>
+    <ClInclude Include="Creator.h">
+      <Filter>Pliki zasobów\struct</Filter>
+    </ClInclude>
+    <ClInclude Include="CreatorConsole.h">
+      <Filter>Pliki zasobów\Gui\console</Filter>
+    </ClInclude>
+    <ClInclude Include="AdminConsole.h">
+      <Filter>Pliki zasobów\Gui\console</Filter>
+    </ClInclude>
+    <ClInclude Include="UserConsole.h">
+      <Filter>Pliki zasobów\Gui\console</Filter>
+    </ClInclude>
+    <ClInclude Include="SettigsMenu.h">
+      <Filter>Pliki zasobów\Gui\console</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

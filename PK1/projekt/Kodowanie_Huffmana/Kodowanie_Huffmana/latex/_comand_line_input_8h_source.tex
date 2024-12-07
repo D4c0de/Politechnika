@@ -1,0 +1,67 @@
+\doxysection{Comand\+Line\+Input.\+h}
+\hypertarget{_comand_line_input_8h_source}{}\label{_comand_line_input_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#pragma\ once}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <exception>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00015\ \textcolor{keyword}{struct\ }\mbox{\hyperlink{struct_command_line_input}{CommandLineInput}}\ \{}
+\DoxyCodeLine{00016\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_command_line_input_ae7e03cb3f91727033cc381f2792608be}{inputFileName}};\ }
+\DoxyCodeLine{00017\ \ \ \ \ std::string\ \mbox{\hyperlink{struct_command_line_input_a1fa5e81ceba61c5542ebd78fa334dc76}{outputFileName}};\ }
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_command_line_input_a7b1ea4ce5f376db37f2853b0f536e64d}{encoding}};\ }
+\DoxyCodeLine{00019\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{struct_command_line_input_a72900d087a0691b3f4a22baaf1fb7592}{decoding}};\ }
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{struct_command_line_input_a123d4508258ea28711a30ef600a8c470}{CommandLineInput}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[]);}
+\DoxyCodeLine{00028\ \};}
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00036\ \textcolor{keyword}{inline}\ \mbox{\hyperlink{struct_command_line_input_a123d4508258ea28711a30ef600a8c470}{CommandLineInput::CommandLineInput}}(\textcolor{keywordtype}{int}\ argc,\ \textcolor{keywordtype}{char}*\ argv[])\ \{}
+\DoxyCodeLine{00037\ \ \ \ \ \mbox{\hyperlink{struct_command_line_input_a7b1ea4ce5f376db37f2853b0f536e64d}{encoding}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00038\ \ \ \ \ \mbox{\hyperlink{struct_command_line_input_a72900d087a0691b3f4a22baaf1fb7592}{decoding}}\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{00039\ \ \ \ \ \textcolor{keywordflow}{if}\ (argc\ <\ 2)\ \{}
+\DoxyCodeLine{00040\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::exception(\textcolor{stringliteral}{"{}Usage:\ -\/i\ input\_file\ -\/o\ output\_file\ -\/c\ for\ coding\ and/or\ -\/d\ for\ decoding"{}});}
+\DoxyCodeLine{00041\ \ \ \ \ \}}
+\DoxyCodeLine{00042\ }
+\DoxyCodeLine{00043\ \ \ \ \ \textcolor{comment}{//\ Processing\ command-\/line\ arguments}}
+\DoxyCodeLine{00044\ \ \ \ \ \textcolor{keywordflow}{for}\ (\textcolor{keywordtype}{int}\ i\ =\ 1;\ i\ <\ argc;\ ++i)\ \{}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (std::string(argv[i])\ ==\ \textcolor{stringliteral}{"{}-\/i"{}})\ \{}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ +\ 1\ <\ argc)\ \{}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_command_line_input_ae7e03cb3f91727033cc381f2792608be}{inputFileName}}\ =\ argv[i\ +\ 1];}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ++i;}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::exception(\textcolor{stringliteral}{"{}Error:\ -\/i\ option\ requires\ the\ input\ file\ name."{}});}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (std::string(argv[i])\ ==\ \textcolor{stringliteral}{"{}-\/o"{}})\ \{}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (i\ +\ 1\ <\ argc)\ \{}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_command_line_input_a1fa5e81ceba61c5542ebd78fa334dc76}{outputFileName}}\ =\ argv[i\ +\ 1];}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ++i;}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::exception(\textcolor{stringliteral}{"{}Error:\ -\/o\ option\ requires\ the\ output\ file\ name."{}});}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (std::string(argv[i])\ ==\ \textcolor{stringliteral}{"{}-\/c"{}})\ \{}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_command_line_input_a7b1ea4ce5f376db37f2853b0f536e64d}{encoding}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ ++i;}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}\ \textcolor{keywordflow}{if}\ (std::string(argv[i])\ ==\ \textcolor{stringliteral}{"{}-\/d"{}})\ \{}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{struct_command_line_input_a72900d087a0691b3f4a22baaf1fb7592}{decoding}}\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ ++i;}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00071\ \ \ \ \ \}}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00073\ \ \ \ \ \textcolor{comment}{//\ Check\ if\ all\ required\ options\ are\ provided}}
+\DoxyCodeLine{00074\ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{struct_command_line_input_ae7e03cb3f91727033cc381f2792608be}{inputFileName}}.empty()\ ||\ \mbox{\hyperlink{struct_command_line_input_a1fa5e81ceba61c5542ebd78fa334dc76}{outputFileName}}.empty()\ ||\ (!\mbox{\hyperlink{struct_command_line_input_a72900d087a0691b3f4a22baaf1fb7592}{decoding}}\ \&\&\ !\mbox{\hyperlink{struct_command_line_input_a7b1ea4ce5f376db37f2853b0f536e64d}{encoding}}))\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::exception(\textcolor{stringliteral}{"{}Error:\ Missing\ required\ options."{}});}
+\DoxyCodeLine{00076\ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordflow}{else}\ \{}
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{struct_command_line_input_a72900d087a0691b3f4a22baaf1fb7592}{decoding}}\ \&\&\ \mbox{\hyperlink{struct_command_line_input_a7b1ea4ce5f376db37f2853b0f536e64d}{encoding}})\ \{}
+\DoxyCodeLine{00079\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{throw}\ std::exception(\textcolor{stringliteral}{"{}Error:\ You\ can't\ encode\ and\ decode\ at\ the\ same\ time."{}});}
+\DoxyCodeLine{00080\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00081\ \ \ \ \ \}}
+\DoxyCodeLine{00082\ \}}
+
+\end{DoxyCode}
